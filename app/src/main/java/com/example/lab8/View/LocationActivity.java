@@ -131,8 +131,12 @@ public class LocationActivity extends AppCompatActivity {
         public void onResponse(Call<ResponseGHN<ArrayList<Ward>>> call, Response<ResponseGHN<ArrayList<Ward>>> response) {
             if(response.isSuccessful()){
                 if(response.body().getCode() == 200){
+
+                    if(response.body().getData() == null)
+                        return;
+
                     ArrayList<Ward> ds = new ArrayList<>(response.body().getData());
-                    if(response.body().getData() == null) return;
+
                     ds.addAll(response.body().getData());
                     SetDataSpinWard(ds);
                 }
