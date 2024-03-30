@@ -10,8 +10,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class GHNRequest {
-    public final static String SHOPID = "191530";
-    public final static String TokenGHN = "d01c7b44-ec5d-11ee-8bfa-8a2dda8ec551";
+    public final static String SHOPID = "191642";
+    public final static String TokenGHN = "d2966042-eeb3-11ee-8bfa-8a2dda8ec551";
     private GHNServices ghnRequestInterface;
 
     public GHNRequest(){
